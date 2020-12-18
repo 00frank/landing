@@ -17,7 +17,7 @@ if (WEATHER_KEY === "") {
     const printWeather = (data) => {
         var weather = JSON.parse(data);
         city.innerHTML = "Buenos Aires"
-        weather_icon.innerHTML = `<img id="w_icon" src="http://openweathermap.org/img/wn/${String(weather.weather[0].icon)}@2x.png">`
+        weather_icon.innerHTML = `<img id="w_icon" src="https://openweathermap.org/img/wn/${String(weather.weather[0].icon)}@2x.png">`
         let comma = String(weather.main.temp).indexOf(".");
         temp.innerHTML = String(weather.main.temp).substring(0, comma) + "°C";
         let desc = String(weather.weather[0].description);
