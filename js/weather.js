@@ -1,5 +1,5 @@
 //Api from OpenWeatherMap (api_key required!): https://openweathermap.org/api
-const WEATHER_KEY = "";
+const WEATHER_KEY = "1f24b908d96b548bc1f18fe83027e3f6";
 if (WEATHER_KEY === "") {
     console.error("No OpenWeatherMap api key registered, get it from: https://openweathermap.org/api");
 } else {
