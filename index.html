@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso rápido</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <main>
+        <section id="weather">
+            <a
+                href="https://weather.com/es-AR/tiempo/hoy/l/eb21b6c30fe7eef7bdb5ae103d0669ffbb96ef1e33a2564bf01c340aca0248ed">
+                <span id="province"></span>
+                <div id="weather-data">
+                    <div id="weather_icon"></div>
+                    <div id="temp"></div>
+                </div>
+            </a>
+        </section>
+        <section id="money">
+            <div id="today-date"></div>
+            <div id="currency1"></div>
+            <div id="currency2"></div>
+        </section>
+        <g-bar>
+            <form autocomplete="off">
+                <span>
+                    <img src="img/g.jpg" class="g no-select" draggable="false">
+                </span>
+                <input type="text" id="search" placeholder="Buscar en la web" spellcheck="false">
+                <input type="submit" hidden value="S">
+                <div class="line_container">
+                    <div class="backline"></div>
+                    <div id="line"></div>
+                </div>
+            </form>
+        </g-bar>
+        <div id="favorites"></div>
+        <div id="news"></div>
+    </main>
+
+    <script src="js/favs.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/money.js"></script>
+    <script src="js/g-bar.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
