@@ -6,7 +6,7 @@ if (NEWS_KEY === "") {
     const newsBlock = document.querySelector("#news");
     var newsArray;
 
-    fetch(`http://api.mediastack.com/v1/news?access_key=${NEWS_KEY}&countries=ar`)
+    fetch(`https://api.mediastack.com/v1/news?access_key=${NEWS_KEY}&countries=ar`)
         .then((response) => response = response.text())
         .then((data) => { printNews(data) })
         .catch(err => console.error(err));
