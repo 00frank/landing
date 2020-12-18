@@ -1,5 +1,5 @@
 //Api from mediastack (api_key required!): https://mediastack.com
-const NEWS_KEY = "";
+const NEWS_KEY = "029d38f56d32b396380fd7bbfbf3d341";
 if (NEWS_KEY === "") {
     console.error("No MediaStack api key registered, get it from: https://mediastack.com");
 } else {
