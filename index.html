@@ -312,13 +312,24 @@
                 </div>
     </main>
     
-<!--
-    <script src="js/favs.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/money.js"></script>
-    <script src="js/g-bar.js"></script>
-    <script src="js/news.js"></script>
--->
+
+    <script>
+    // tooltip from https://atomiks.github.io/tippyjs/
+        tippy('#weather-data', {
+            duration: 0,
+            placement: 'bottom',
+            arrow: false,
+            followCursor: 'default',
+            content: 'Cielo claro',
+        });
+        tippy('#currency2', {
+        duration: 0,
+        placement: 'bottom',
+        arrow: false,
+        followCursor: 'default',
+        content: '+65% $145.2',
+    });
+    </script>
 
 </body>
 
