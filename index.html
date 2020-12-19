@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Acceso rápido</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -18,19 +17,18 @@
 <body>
     <main>
         <section id="weather">
-            <a
-                href="https://weather.com/es-AR/tiempo/hoy/l/eb21b6c30fe7eef7bdb5ae103d0669ffbb96ef1e33a2564bf01c340aca0248ed">
-                <span id="province"></span>
+            <a href="https://weather.com/es-AR/tiempo/hoy/l/eb21b6c30fe7eef7bdb5ae103d0669ffbb96ef1e33a2564bf01c340aca0248ed">
+                <span id="province">Buenos Aires</span>
                 <div id="weather-data">
-                    <div id="weather_icon"></div>
-                    <div id="temp"></div>
+                    <div id="weather_icon"><img id="w_icon" src="http://openweathermap.org/img/wn/01n@2x.png"></div>
+                    <div id="temp">26°C</div>
                 </div>
             </a>
         </section>
         <section id="money">
-            <div id="today-date"></div>
-            <div id="currency1"></div>
-            <div id="currency2"></div>
+            <div id="today-date">Viernes 18/12 2020</div>
+            <div id="currency1">Blue: $150</div>
+            <div id="currency2">Oficial: $88</div>
         </section>
         <g-bar>
             <form autocomplete="off">
@@ -38,22 +36,290 @@
                     <img src="img/g.jpg" class="g no-select" draggable="false">
                 </span>
                 <input type="text" id="search" placeholder="Buscar en la web" spellcheck="false">
-                <input type="submit" hidden value="S">
+                <input type="submit" hidden="" value="S">
                 <div class="line_container">
                     <div class="backline"></div>
                     <div id="line"></div>
                 </div>
             </form>
         </g-bar>
-        <div id="favorites"></div>
-        <div id="news"></div>
+        <div id="favorites"><div class="containerLink" id="Github">
+        <div class="toLink">
+            <a href="https://github.com/00frank">
+                <img class="z2" src="img/bookmarks/github.png">
+            </a>
+        </div>
+        <p>Github</p>
+    </div>
+    <div class="containerLink" id="Youtube">
+        <div class="toLink">
+            <a href="https://www.youtube.com/">
+                <img class="z1" src="img/bookmarks/youtube.png">
+            </a>
+        </div>
+        <p>Youtube</p>
+    </div>
+    <div class="containerLink" id="WhatsApp">
+        <div class="toLink">
+            <a href="https://web.whatsapp.com/">
+                <img class="z2" src="img/bookmarks/whatsapp.png">
+            </a>
+        </div>
+        <p>WhatsApp</p>
+    </div>
+    <div class="containerLink" id="Gmail">
+        <div class="toLink">
+            <a href="https://mail.google.com/mail/u/0/">
+                <img class="z1" src="img/bookmarks/gmail.png">
+            </a>
+        </div>
+        <p>Gmail</p>
+    </div>
+    <div class="containerLink" id="Udemy">
+        <div class="toLink">
+            <a href="https://www.udemy.com">
+                <img class="z2" src="img/bookmarks/udemy.png">
+            </a>
+        </div>
+        <p>Udemy</p>
+    </div>
+    </div>
+        <div id="news">
+                <div class="new_card">
+                    <a href="https://vos.lavoz.com.ar/musica/nahuel-pennisi-no-ver-tambien-es-un-sentido-mas-una-especie-de-virtud">
+                        <div class="card_header">
+                            <span class="author">VOScomar | Últimas noticias</span>
+                            <h3 class="title">Nahuel Pennisi: "No ver también es un sentido más, una especie de virtud"</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://cdnvos.lavoz.com.ar/sites/default/files/nota_periodistica/nahuel-pennisi-web_1608325424.jpg">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312773-canal-9-los-trabajadorxs-se-movilizaron-en-defensa-de-su-tra">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Canal 9: los trabajadorxs se movilizaron en defensa de su trabajo y su salario</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128558-canal9.jpg?itok=RxKCauFE">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312829-espionaje-ilegal-piden-el-procesamiento-de-juan-de-stefano-e">
+                        <div class="card_header">
+                            <span class="author">Raúl Kollmann</span>
+                            <h3 class="title">Espionaje ilegal: piden el procesamiento de Juan De Stéfano, exjefe de Jurídicos de la AFI macrista</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128599-charla-destefano-800x445.jpg?itok=Fx8txgsx">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312826-cfk-los-funcionarios-que-tengan-miedo-de-firmar-o-decidir-qu">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">"Los funcionarios que tengan miedo de firmar o decidir que vayan a buscar otro laburo"</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128613-whatsapp-20image-202020-12-18-20at-2020-02-47.jpeg?itok=7gXh5MZk">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312813-coronavirus-en-las-ultimas-24-horas-se-notificaron-138-nueva">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Coronavirus: en las últimas 24 horas se notificaron 138 muertes</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128598-reporte-18-12-2020.jpg?itok=ev-87zX0">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312798-anuncian-planes-de-celulares-internet-telefonia-fija-y-tv-pa">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Anuncian planes de celulares, internet, telefonía fija y TV paga desde 150 pesos por mes</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128569-98612-whatsapp-20image-202020-08-21-20at-2020-27-59_0.jpeg?itok=3DbOqAxD">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312792-carlos-menem-sufrio-una-complicacion-coronaria">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Carlos Menem sufrió una complicación coronaria</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128571-whatsapp-20image-202020-12-18-20at-2016-13-58.jpeg?itok=_hSnBY1Y">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312753-alberto-fernandez-anuncio-la-extension-del-dispo-hasta-el-31">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Alberto Fernández anunció que sigue el distanciamiento y habló de la vacuna</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128540-whatsapp-20image-202020-12-18-20at-2012-34-22.jpeg?itok=NduqWrSV">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312761-coronavirus-en-verano-por-que-sigue-circulando">
+                        <div class="card_header">
+                            <span class="author">Gustavo Douglas Nazareno</span>
+                            <h3 class="title">Coronavirus en verano: ¿por qué sigue circulando?</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128548-verano_0.jpeg?itok=dFBp60FH">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312747-la-herencia-de-diego-maradona-la-lista-de-bienes-que-matias-">
+                        <div class="card_header">
+                            <span class="author">Raúl Kollmann</span>
+                            <h3 class="title">Exclusivo: La lista de bienes de Diego Maradona que Matías Morla le pasará a la jueza</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128534-diego-na-0-20-282-29.jpg?itok=pzYN-_dQ">
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                
+                
+                <div class="new_card">
+                    <a href="https://www.perfil.com/noticias/politica/espionaje-ilegal-fiscales-piden-procesar-a-arribas-y-majdalani-y-la-falta-de-merito-de-nieto.phtml">
+                        <div class="card_header">
+                            <span class="author">Cecilia  Devanna</span>
+                            <h3 class="title">Espionaje ilegal: fiscales piden procesar a Arribas y Majdalani y la falta de mérito de Nieto</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://fotos.perfil.com/2020/12/16/trim/500/313/gustavo-arribas-y-silvia-majdalani-20201215-1101458.jpg">
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312828-la-chicana-la-cancion-ayuda-a-la-memoria-de-los-pueblos">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">La Chicana: "La canción ayuda a la memoria de los pueblos"</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128616-horizontal.jpg?itok=IiKEffXv">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312782-brasil-exigira-examen-pcr-negativo-para-permitir-la-entrada-">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Brasil exigirá PCR negativo para permitir la entrada de extranjeros</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128564-whatsapp-20image-202020-12-18-20at-2016-17-59.jpeg?itok=wenvu6TD">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card">
+                    <a href="https://www.pagina12.com.ar/312795-angeles-rawson-confirman-la-condena-al-primo-de-la-esposa-de">
+                        <div class="card_header">
+                            <span class="author">Página/12</span>
+                            <h3 class="title">Ángeles Rawson: confirman la condena al primo de la esposa de Mangeri</h3>
+                        </div>
+                        <div class="new_image">
+                            <img src="https://images.pagina12.com.ar/styles/width470/public/2020-12/128577-whatsapp-20image-202020-12-18-20at-2015-46-36.jpeg?itok=mU7oKMOj">
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.zonanortediario.com.ar/18/12/2020/otras-138-personas-murieron-y-7-002-fueron-diagnosticadas-con-coronavirus-en-el-pais/">
+                        <span class="author-no-img">zonanortediario.com.ar</span>
+                        <h3 class="title-no-img">Otras 138 personas murieron y 7.002 fueron diagnosticadas con coronavirus en el país</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.diariodecuyo.com.ar/policiales/Amenazo-a-su-expareja-con-una-escopeta-y-en-la-huida-fue-interceptado-por-la-policia-20201218-0124.html">
+                        <span class="author-no-img">Redacción Diario de Cuyo</span>
+                        <h3 class="title-no-img">Amenazó a su expareja con una escopeta y en la huida fue interceptado por la policía</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://diarioelsol.com.ar/2020/12/18/el-microbanco-de-cafesg-beneficio-a-emprendedores-del-departamento-concordia/">
+                        <span class="author-no-img">editor IAM</span>
+                        <h3 class="title-no-img">El Microbanco de CAFESG benefició a emprendedores del departamento Concordia</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.losandes.com.ar/sociedad/desde-ni-una-menos-se-despegaron-de-los-incidentes-de-casa-de-gobierno-y-condenaron-la-violencia">
+                        <span class="author-no-img">Redacción LA</span>
+                        <h3 class="title-no-img">Desde Ni Una Menos se despegaron de los incidentes de Casa de Gobierno y condenaron la violencia</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.losandes.com.ar/sociedad/las-repercusiones-en-los-medios-nacionales-tras-los-incidentes-en-la-marcha-por-florencia-romano">
+                        <span class="author-no-img">Redacción LA</span>
+                        <h3 class="title-no-img">Las repercusiones en los medios nacionales tras los incidentes en la marcha por Florencia Romano</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.primeraedicion.com.ar/nota/100377137/la-movilidad-urbana-una-prioridad-para-posadas/">
+                        <span class="author-no-img">Sebastián Cubilla</span>
+                        <h3 class="title-no-img">La movilidad urbana, una prioridad para Posadas</h3>
+                    </a>
+                </div>
+                
+                <div class="new_card-no-img">
+                    <a href="https://www.primeraedicion.com.ar/nota/100377319/coronavirus-en-argentina-informan-138-muertes-y-7-002-contagios/">
+                        <span class="author-no-img">Ezequiel Miño</span>
+                        <h3 class="title-no-img">Coronavirus en Argentina: informan 138 muertes y 7.002 contagios</h3>
+                    </a>
+                </div>
+                </div>
     </main>
-
+    
+<!--
     <script src="js/favs.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/money.js"></script>
     <script src="js/g-bar.js"></script>
     <script src="js/news.js"></script>
+-->
+
 </body>
 
 </html>
